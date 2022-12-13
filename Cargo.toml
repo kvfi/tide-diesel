@@ -1,0 +1,22 @@
+[package]
+name = "tide-diesel"
+version = "0.1.0"
+authors = [
+    "kvfi <mail@ouafi.net>",
+]
+edition = "2021"
+
+[dependencies]
+async-std = "1"
+
+[dependencies.tide]
+version = "0.16"
+default-features = false
+
+[dependencies.diesel]
+version = "2.0.2"
+features = ["postgres", "extras"]
+
+[dev-dependencies]
+anyhow = "1"
+
