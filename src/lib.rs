@@ -1,7 +1,7 @@
 use async_std::sync::{Mutex, MutexGuard};
 use diesel::r2d2::R2D2Connection;
 use diesel::r2d2::{ConnectionManager, Pool, PooledConnection};
-use diesel::Connection;
+
 use std::sync::Arc;
 use tide::{utils::async_trait, Middleware, Next, Request};
 
